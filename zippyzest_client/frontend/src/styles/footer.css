@@ -1,0 +1,9 @@
+.address p{
+    font-size: 15px;
+}
+.company-ul ul li a{
+    transition: all 0.3s;
+}
+.company-ul ul li:hover a{
+    color: #699c47!important;
+}

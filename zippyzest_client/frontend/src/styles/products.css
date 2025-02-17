@@ -1,0 +1,218 @@
+/* Scrollable row of products */
+.product-row {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    padding-bottom: 10px;
+    scroll-behavior: smooth; 
+}
+
+.product-row::-webkit-scrollbar {
+   display: none;
+}
+
+.product-row::-webkit-scrollbar-thumb {
+    background-color: #ccc; /* Customize scrollbar color */
+    border-radius: 10px;
+}
+
+.product-row::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+/* Product box adjustments */
+.product-box {
+    min-width: 200px; /* Ensures every product takes up the same width */
+    max-width: 250px; /* Prevents the product box from expanding */
+    margin-right: 20px; /* Space between products */
+    background-color: #eef2f3;
+    padding: 10px;
+    border: 1px solid #e5ddd9;
+    border-radius: 8px;
+    display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+/* Ensure the container does not stretch to 100% width */
+.container {
+    max-width: 1200px; /* Optional: adjust based on your layout */
+    margin: 0 auto; /* Center the container */
+}
+
+.product-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.product-box img {
+    width: 90%;
+    height: 130px;
+}   
+
+.product-name h5 {
+    font-size: 15px;
+    min-height: 40px; /* Ensures consistent text height */
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.product-name span {
+    font-size: 15px;
+    font-weight: 300;
+    color: #777777;
+}
+
+ .add-to-cart-btn a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #f97101;
+    border: 1px solid #f97101;
+    border-radius: 8px;
+    transition: all 0.3s;
+}
+
+.add-to-cart-btn a:hover {
+    background-color: #f97101;
+    color: #ffffff;
+} 
+.unit-btn .active {
+    background-color: #f97101;
+    color: white;
+    border-radius: 8px;
+    border: 1px solid #f97101;
+    transition: all 0.3s ease-in-out;
+}
+
+.unit-btn a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #f97101;
+    border: 1px solid #f97101;
+    border-radius: 8px;
+    padding: 10px;
+    transition: all 0.3s ease-in-out;
+}
+
+.unit-btn a:hover {
+    background-color: #f97101;
+    color: white;
+}
+
+.product-part del {
+    color: #777777;
+}
+
+
+
+.arrow-left, .arrow-right {
+    background-color: #f97101;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    padding: 15px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute; /* Keep the position absolute */
+    top: 175px; /* Center vertically */
+    transform: translateY(-50%); /* Adjust for centering */
+}
+
+/* Adjust positioning for left and right arrows */
+.arrow-left {
+    left: 10px; /* Change this as needed for spacing */
+}
+
+.arrow-right {
+    right: 10px; /* Change this as needed for spacing */
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 768px) {
+    .arrow-left, .arrow-right {
+        padding: 10px;
+        width: 40px; /* Adjust button size */
+        height: 40px; /* Adjust button size */
+    }
+}
+
+@media (max-width: 480px) {
+    .arrow-left, .arrow-right {
+        padding: 8px; /* Adjust padding for smaller screens */
+        width: 35px; /* Adjust button size */
+        height: 35px; /* Adjust button size */
+    }
+}
+
+.arrow-left:hover, .arrow-right:hover {
+    background-color: #f97101;
+}
+
+.arrow-left:focus, .arrow-right:focus {
+    outline: none;
+}
+
+.view-all-container {
+    margin-top: 10px; /* Adjust margin as needed */
+}
+
+.view-all-btn {
+    background-color: transparent; /* No background color */
+    border: none; /* No border */
+    color: #007bff; /* Button text color (can change this to your desired color) */
+    font-size: 16px; /* Adjust font size as needed */
+    cursor: pointer; /* Change cursor to pointer on hover */
+    display: flex; /* Flexbox for alignment */
+    align-items: center; /* Center vertically */
+}
+
+.view-all-btn:hover {
+    text-decoration: underline; /* Optional: underline on hover */
+}
+
+.arrow-icon {
+    margin-left: 5px; /* Space between text and arrow */
+    font-size: 16px; /* Adjust arrow size as needed */
+    transition: transform 0.3s; /* Add transition for smooth effect */
+}
+
+.view-all-btn:hover .arrow-icon {
+    transform: translateX(2px); /* Slightly move the arrow on hover for effect */
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .product-box {
+        min-width: 150px; /* Reduce the width for smaller screens */
+        max-width: 200px;
+    }
+
+    .arrow-buttons {
+        gap: 5px;
+    }
+
+    .arrow-left, .arrow-right {
+        padding: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .product-box {
+        min-width: 120px;
+        max-width: 180px;
+    }
+
+    .product-box img {
+        height: 100px; /* Reduce image height */
+    }
+}

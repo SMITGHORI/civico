@@ -1,0 +1,33 @@
+.main-bg-sidebar{
+    background-color: #111c43!important;
+}
+.main-white{
+    color: #ffffff!important;
+}
+.sidebar-menu ul li{
+    background-color: transparent;
+    transition: 0.2s all;
+    border-radius: 8px;
+}
+.sidebar-menu ul li:hover{
+    background-color: #1d284d;
+}
+.main-bg-admin{
+    background-color: #f0f1f7;
+}
+.side-box-admin{
+    padding: 20px;
+    border-radius: 8px;
+    background-color: #ffffff;
+}
+.form-admin input{
+    border-radius: 5px;
+    border: 1px solid #e5ddd9;;
+}
+.form-admin textarea{
+    border-radius: 5px;
+    border: 1px solid #e5ddd9;;
+}
+.sidebar{
+    height: 100vh;
+}

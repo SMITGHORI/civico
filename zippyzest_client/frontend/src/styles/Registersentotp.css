@@ -1,0 +1,25 @@
+.card-big {
+    padding: 40px;
+}
+.signup-btn button{
+    transition: 0.4s;
+}
+.signup-btn:hover button{
+    background-color: transparent!important;
+    border: 1px solid #699c47;
+    color: #699c47!important;
+}
+@media (min-width: 700px) {
+    .card-big form input{
+        width: 50%!important;
+    }
+    .signup-btn{
+        width: 50%!important;
+    }
+}
+@media (max-width: 700px) {
+    
+    .signup-btn{
+        width: 100%!important;
+    }
+}

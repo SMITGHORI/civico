@@ -1,0 +1,13 @@
+.cat-image{
+    width: 100%;
+    border-radius: 10px;
+    overflow: hidden;
+    height: 150px;
+}
+.cat-image img{
+    height: 100%;
+    width: 100%;
+}
+.cat-name a{
+    font-weight: 500;
+}

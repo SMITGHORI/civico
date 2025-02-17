@@ -1,0 +1,73 @@
+.contact-section {
+    background-color: #f97101!important;
+    padding: 50px 0;
+    color: white;
+    text-align: center;
+  }
+  
+  .support-content {
+    text-align: left;
+    padding: 20px;
+  }
+  
+  .support-title {
+    font-size: 28px;
+    font-weight: bold;
+    line-height: 1.3;
+  }
+  
+  .support-text {
+    font-size: 18px;
+    margin-top: 10px;
+    opacity: 0.9;
+  }
+  
+  .support-card {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .support-icon {
+    width: 50px;
+    height: 50px;
+    background: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 5px 15px rgba(255, 255, 255, 0.2);
+  }
+  
+  .icon {
+    font-size: 24px;
+    color: #6a11cb;
+  }
+  
+  .support-info {
+    text-align: left;
+    margin-left: 15px;
+  }
+  
+  .support-label {
+    font-size: 16px;
+    opacity: 0.8;
+  }
+  
+  .support-email {
+    display: block;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+    transition: 0.3s;
+  }
+  
+  .support-email:hover {
+    text-decoration: underline;
+    color: #ffdd57;
+  }
+  

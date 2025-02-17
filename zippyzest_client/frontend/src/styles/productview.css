@@ -1,0 +1,99 @@
+.m-120{
+    margin: 120px;
+}
+/* .w-class{
+    width: 70%!important;
+} */
+ /* .product-info{
+    width: 100%!important;
+    border: 1px solid #e5ddd9;
+    border-radius: 8px;
+ } */
+ /* Add this to your productview.css file */
+/* .product-img-fluid {
+    position: fixed;
+    top: 100px; 
+    left: 50px; 
+    width: 50%; 
+  } */
+  .product-img-fluid {
+    position: absolute;
+    top: 100px; /* Adjust as needed to your layout */
+    left: 25%; /* Center relative to the parent container */
+    transform: translateX(-50%); /* Horizontally center */
+    width: 50%; /* Set the width to 50% of the viewport */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .product-info {
+    position: relative;
+    padding: 20px;
+    margin-top: 120px; /* Adjust to your content */
+  }
+  .img-cart{
+    border-radius: 8px;
+  }
+  .bill-detais-cart{
+    border: 1px solid #e5ddd9;
+    padding: 10px;
+    border-radius: 8px;
+  }
+  .cate-box{
+    border: 1px solid #e5ddd9;
+    transition: all 0.3s;
+  }
+  .cate-box:hover{
+    background-color: #f7f7f7;
+  }
+  .cateimg{
+    width: 40px;
+    border-radius: 2px;
+  }
+  .banner-text{
+    position: relative;
+  }
+  .banner-text .shape-1{
+    position: absolute;
+    top: -20%; 
+    left: 50%;
+  }
+  .banner-text .shape-2{
+    position: absolute;
+    top: 57%; 
+    left: 30%;
+    animation: bounce 2s ease-in-out infinite;
+  }
+  @media (max-width: 800px) {
+    .product-img-fluid {
+      position: relative;
+      top: 0; /* Adjust as needed for your layout */
+      left: 0; /* Adjust as needed */
+      width: 100%; /* Set width to half of the screen */
+    }
+    .product-img-fluid img {
+      margin: 0;/* Set width to half of the screen */
+    }
+  }
+  @media (mi-width:  ) {
+    .product-img-fluid {
+      position: relative;
+      top: 0; /* Adjust as needed for your layout */
+      left: 0; /* Adjust as needed */
+      width: 50%; /* Set width to half of the screen */
+    }
+  }
+  @keyframes bounce {
+    0%, 100% {
+      transform: translateY(0); /* Initial position */
+    }
+    50% {
+      transform: translateY(-20px); /* Moves the image up by 20px */
+    }
+  }
+  @media (max-width : 720px){
+    .pro-order-boxes{
+      flex-wrap: wrap;
+    }
+  }
