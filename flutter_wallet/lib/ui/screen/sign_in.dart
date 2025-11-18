@@ -18,7 +18,7 @@ class _SignInPageState extends State<SignInPage> {
   @override
   Widget build(BuildContext context) {
     return Material(
-      color: Theme.of(context).backgroundColor,
+      color: Theme.of(context).scaffoldBackgroundColor,
       child: SafeArea(
         child: Row(
           mainAxisAlignment: MainAxisAlignment.start,
@@ -61,7 +61,7 @@ class _SignInPageState extends State<SignInPage> {
           children: <Widget>[
             Text(
               formattedTime,
-              style: Theme.of(context).textTheme.headline6,
+              style: Theme.of(context).textTheme.titleLarge,
             ),
             const SizedBox(
               width: 30,
@@ -72,7 +72,7 @@ class _SignInPageState extends State<SignInPage> {
             ),
             Text(
               '34° C',
-              style: Theme.of(context).textTheme.subtitle1,
+              style: Theme.of(context).textTheme.titleMedium,
             ),
           ],
         ),
@@ -81,7 +81,7 @@ class _SignInPageState extends State<SignInPage> {
         ),
         Text(
           formattedDate,
-          style: Theme.of(context).textTheme.bodyText2,
+          style: Theme.of(context).textTheme.bodySmall,
         )
       ],
     );
@@ -99,14 +99,14 @@ class _SignInPageState extends State<SignInPage> {
           ),
           Text(
             'eWalle',
-            style: Theme.of(context).textTheme.headline5,
+            style: Theme.of(context).textTheme.headlineSmall,
           ),
           const SizedBox(
             height: 18,
           ),
           Text(
             'Open An Account For Digital  E-Wallet Solutions.\nInstant Payouts. \n\nJoin For Free.',
-            style: Theme.of(context).textTheme.bodyText1,
+            style: Theme.of(context).textTheme.bodyMedium,
           )
         ],
       ),
@@ -133,7 +133,7 @@ class _SignInPageState extends State<SignInPage> {
           },
           child: Text(
             'Sign in',
-            style: Theme.of(context).textTheme.button,
+            style: Theme.of(context).textTheme.labelLarge,
           ),
         ),
         const SizedBox(
@@ -141,7 +141,7 @@ class _SignInPageState extends State<SignInPage> {
         ),
         Text(
           'Create an Account',
-          style: Theme.of(context).textTheme.bodyText2,
+          style: Theme.of(context).textTheme.bodySmall,
         )
       ],
     );
