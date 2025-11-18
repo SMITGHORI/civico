@@ -37,7 +37,7 @@ class _DrawerPageState extends State<DrawerPage> with TickerProviderStateMixin {
                     decoration: BoxDecoration(
                         borderRadius: const BorderRadius.only(
                             bottomRight: Radius.circular(60)),
-                        color: Theme.of(context).backgroundColor),
+                        color: Theme.of(context).scaffoldBackgroundColor),
                     child: Center(
                       child: Row(
                         mainAxisAlignment: MainAxisAlignment.center,
@@ -51,7 +51,7 @@ class _DrawerPageState extends State<DrawerPage> with TickerProviderStateMixin {
                             child: CircleAvatar(
                               radius: 22.0,
                               backgroundColor:
-                                  Theme.of(context).backgroundColor,
+                                  Theme.of(context).scaffoldBackgroundColor,
                               child: ClipRRect(
                                 child: SvgPicture.asset(avatorOne),
                                 borderRadius: BorderRadius.circular(50.0),
@@ -67,11 +67,11 @@ class _DrawerPageState extends State<DrawerPage> with TickerProviderStateMixin {
                             children: [
                               Text(
                                 "Carol Black",
-                                style: Theme.of(context).textTheme.headline6,
+                                style: Theme.of(context).textTheme.titleLarge,
                               ),
                               Text(
                                 "Seattle Washington",
-                                style: Theme.of(context).textTheme.bodyText1,
+                                style: Theme.of(context).textTheme.bodyMedium,
                               )
                             ],
                           )
@@ -110,7 +110,7 @@ class _DrawerPageState extends State<DrawerPage> with TickerProviderStateMixin {
                     ),
                     Text(
                       "Logout",
-                      style: Theme.of(context).textTheme.headline6,
+                      style: Theme.of(context).textTheme.titleLarge,
                     )
                   ],
                 ),
@@ -120,7 +120,7 @@ class _DrawerPageState extends State<DrawerPage> with TickerProviderStateMixin {
                 padding: const EdgeInsets.all(20),
                 child: Text(
                   "Ver 2.0.1",
-                  style: Theme.of(context).textTheme.bodyText1,
+                  style: Theme.of(context).textTheme.bodyMedium,
                 ),
               )
             ],
@@ -202,7 +202,7 @@ class _DrawerPageState extends State<DrawerPage> with TickerProviderStateMixin {
         ),
         Text(
           name,
-          style: Theme.of(context).textTheme.headline6!.copyWith(
+          style: Theme.of(context).textTheme.titleLarge!.copyWith(
                 fontSize: 16,
                 fontWeight: (isSelected) ? FontWeight.w700 : FontWeight.w400,
               ),

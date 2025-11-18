@@ -13,7 +13,7 @@ class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Theme.of(context).backgroundColor,
+      backgroundColor: Theme.of(context).scaffoldBackgroundColor,
       body: Padding(
         padding: const EdgeInsets.only(left: 18, right: 18, top: 34),
         child: SingleChildScrollView(
@@ -26,7 +26,7 @@ class _HomePageState extends State<HomePage> {
               ),
               Text(
                 'Account Overview',
-                style: Theme.of(context).textTheme.headline4,
+                style: Theme.of(context).textTheme.headlineMedium,
               ),
               const SizedBox(
                 height: 16,
@@ -40,7 +40,7 @@ class _HomePageState extends State<HomePage> {
                 children: <Widget>[
                   Text(
                     'Send Money',
-                    style: Theme.of(context).textTheme.headline4,
+                    style: Theme.of(context).textTheme.headlineMedium,
                   ),
                   SvgPicture.asset(
                     scan,
@@ -59,7 +59,7 @@ class _HomePageState extends State<HomePage> {
                 children: <Widget>[
                   Text(
                     'Services',
-                    style: Theme.of(context).textTheme.headline4,
+                    style: Theme.of(context).textTheme.headlineMedium,
                   ),
                   SvgPicture.asset(
                     filter,
@@ -94,7 +94,7 @@ class _HomePageState extends State<HomePage> {
             ),
             Text(
               'eWalle',
-              style: Theme.of(context).textTheme.headline3,
+              style: Theme.of(context).textTheme.displayMedium,
             )
           ],
         ),
@@ -134,14 +134,14 @@ class _HomePageState extends State<HomePage> {
             children: <Widget>[
               Text(
                 '20,600',
-                style: Theme.of(context).textTheme.headline5,
+                style: Theme.of(context).textTheme.headlineSmall,
               ),
               const SizedBox(
                 height: 12,
               ),
               Text(
                 'Current Balance',
-                style: Theme.of(context).textTheme.headline4!.copyWith(
+                style: Theme.of(context).textTheme.headlineMedium!.copyWith(
                       fontSize: 15,
                       fontWeight: FontWeight.w400,
                     ),
@@ -212,7 +212,7 @@ class _HomePageState extends State<HomePage> {
                       border: Border.all(color: const Color(0xffD8D9E4))),
                   child: CircleAvatar(
                     radius: 22.0,
-                    backgroundColor: Theme.of(context).backgroundColor,
+                    backgroundColor: Theme.of(context).scaffoldBackgroundColor,
                     child: ClipRRect(
                       child: SvgPicture.asset(avatorOne),
                       borderRadius: BorderRadius.circular(50.0),
@@ -221,7 +221,7 @@ class _HomePageState extends State<HomePage> {
                 ),
                 Text(
                   'Mike',
-                  style: Theme.of(context).textTheme.bodyText1,
+                  style: Theme.of(context).textTheme.bodyMedium,
                 )
               ],
             ),
@@ -243,7 +243,7 @@ class _HomePageState extends State<HomePage> {
                       border: Border.all(color: const Color(0xffD8D9E4))),
                   child: CircleAvatar(
                     radius: 22.0,
-                    backgroundColor: Theme.of(context).backgroundColor,
+                    backgroundColor: Theme.of(context).scaffoldBackgroundColor,
                     child: ClipRRect(
                       child: SvgPicture.asset(avatorTwo),
                       borderRadius: BorderRadius.circular(50.0),
@@ -252,7 +252,7 @@ class _HomePageState extends State<HomePage> {
                 ),
                 Text(
                   'Joseph',
-                  style: Theme.of(context).textTheme.bodyText1,
+                  style: Theme.of(context).textTheme.bodyMedium,
                 )
               ],
             ),
@@ -274,7 +274,7 @@ class _HomePageState extends State<HomePage> {
                       border: Border.all(color: const Color(0xffD8D9E4))),
                   child: CircleAvatar(
                     radius: 22.0,
-                    backgroundColor: Theme.of(context).backgroundColor,
+                    backgroundColor: Theme.of(context).scaffoldBackgroundColor,
                     child: ClipRRect(
                       child: SvgPicture.asset(avatorThree),
                       borderRadius: BorderRadius.circular(50.0),
@@ -283,7 +283,7 @@ class _HomePageState extends State<HomePage> {
                 ),
                 Text(
                   'Ashley',
-                  style: Theme.of(context).textTheme.bodyText1,
+                  style: Theme.of(context).textTheme.bodyMedium,
                 )
               ],
             ),
@@ -340,7 +340,7 @@ class _HomePageState extends State<HomePage> {
                 Text(
                   value.title,
                   textAlign: TextAlign.center,
-                  style: Theme.of(context).textTheme.bodyText1,
+                  style: Theme.of(context).textTheme.bodyMedium,
                 ),
                 const SizedBox(
                   height: 14,
