@@ -14,7 +14,7 @@ class SignInPage extends StatefulWidget {
 class _SignInPageState extends State<SignInPage> {
   static DateTime now = DateTime.now();
   String formattedTime = DateFormat.jm().format(now);
-  String formattedDate = DateFormat('MMM d, yyyy | EEEEEE').format(now);
+  String formattedDate = DateFormat('MMM d, yyyy | EEE').format(now);
   @override
   Widget build(BuildContext context) {
     return Material(
